@@ -8,41 +8,63 @@
       name="description"
       content="Premium personal portfolio website for Saksham Baranwal, a Computer Science student and web developer."
     />
+    <meta name="theme-color" content="#050a14" />
     <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="Saksham Baranwal home">Saksham Baranwal</a>
+    <header class="topbar" aria-label="Primary navigation">
+      <div class="topbar-inner">
+        <a class="brand" href="#home" aria-label="Saksham Baranwal home">S<span>B</span></a>
         <nav class="nav-links" aria-label="Portfolio sections">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="resume-button" href="#contact">Resume</a>
-      </header>
+        <a class="resume-button" href="assets/Saksham_Baranwal_Resume.pdf" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M5 21h14" /></svg>
+          <span>Download Resume</span>
+        </a>
+      </div>
+    </header>
 
+    <div class="site-shell">
       <main>
         <section class="hero section" id="home">
           <div class="hero-copy reveal">
-            <p class="eyebrow">Hey, I am Saksham Baranwal</p>
-            <h1>Computer Science Student &amp; Web Developer</h1>
+            <p class="hello">Hello, I'm</p>
+            <h1>Saksham <span class="accent">Baranwal</span></h1>
+            <p class="hero-role">B.Tech CSE | Developer | Problem Solver</p>
             <p class="hero-intro">
-              Passionate about Web Development, AI, and creating clean digital
-              experiences. Currently pursuing B.Tech in Computer Science while
-              continuously building real-world projects.
+              I build real-world projects, explore new technologies, and love
+              turning ideas into useful solutions. Currently focused on Full
+              Stack Development, Cloud and AI.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#projects">
-                View Projects
-                <span aria-hidden="true">↗</span>
+                View My Work
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /><path d="m13 6 6 6-6 6" /></svg>
               </a>
-              <a class="btn btn-secondary" href="#contact">
-                Contact Me
-                <span aria-hidden="true">@</span>
+              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+            </div>
+            <div class="socials" aria-label="Social links">
+              <a href="https://www.linkedin.com/in/sakshambaranwal25/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" /></svg>
+              </a>
+              <a href="https://github.com/codewithsakshamb" target="_blank" rel="noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z" /></svg>
+              </a>
+              <a href="mailto:saksham250405@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" /><path d="m4 7 8 6 8-6" /></svg>
               </a>
             </div>
           </div>
@@ -51,9 +73,17 @@
             <div class="visual-orbit" aria-hidden="true"></div>
             <img
               src="assets/hero-developer.png"
-              alt="3D illustration of a friendly developer in an orange jacket"
+              alt="3D illustration of Saksham as a friendly developer in a blue hoodie working on a laptop"
               class="developer-illustration"
+              width="900"
+              height="1059"
             />
+            <div class="script-note" aria-hidden="true">
+              <span>Code</span>
+              <span>Build</span>
+              <span>Learn</span>
+              <span>Repeat</span>
+            </div>
             <span class="tech-badge badge-html">HTML</span>
             <span class="tech-badge badge-css">CSS</span>
             <span class="tech-badge badge-js">JS</span>
@@ -61,28 +91,85 @@
             <span class="tech-badge badge-github">GitHub</span>
             <span class="tech-badge badge-ai">AI</span>
           </div>
+
+          <aside class="hero-card glass-card reveal" aria-label="Quick info">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Z" /><path d="M6 11.5V16c0 1.2 2.7 2.5 6 2.5s6-1.3 6-2.5v-4.5" /><path d="M22 9v6" /></svg>
+              </div>
+              <div>
+                <strong>B.Tech CSE</strong>
+                <span>IILM, Greater Noida<br />2025 – 2029</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 1 0-14 0C5 14.8 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+              </div>
+              <div>
+                <strong>Greater Noida, India</strong>
+                <span>Open to opportunities</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.8" /><path d="M2 20h20" /></svg>
+              </div>
+              <div>
+                <strong>Tech Interests</strong>
+                <span>Full Stack • Cloud • AI/ML</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="stats-strip" aria-label="Highlights">
+          <div class="stat-card glass-card reveal">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5" /><path d="m16 7 5 5-5 5" /><path d="m14 4-4 16" /></svg>
+            </div>
+            <div><strong>5+</strong><span>Projects Completed</span></div>
+          </div>
+          <div class="stat-card glass-card reveal">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2" /><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" /><path d="M16 4.8a3.2 3.2 0 0 1 0 6.4" /><path d="M18 14.8c1.8.7 3 2.4 3 5.2" /></svg>
+            </div>
+            <div><strong>2+</strong><span>Hackathons</span></div>
+          </div>
+          <div class="stat-card glass-card reveal">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6c-1.8-1.3-4.3-2-8-2v14c3.7 0 6.2.7 8 2 1.8-1.3 4.3-2 8-2V4c-3.7 0-6.2.7-8 2Z" /><path d="M12 6v14" /></svg>
+            </div>
+            <div><strong>100+</strong><span>Hours of Learning</span></div>
+          </div>
+          <div class="stat-card glass-card reveal">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" /></svg>
+            </div>
+            <div><strong>Always</strong><span>Learning New Things</span></div>
+          </div>
         </section>
 
         <section class="section about-section" id="about">
           <div class="section-heading reveal">
             <p class="eyebrow">About</p>
-            <h2>Saksham Baranwal</h2>
+            <h2>About Me</h2>
           </div>
           <div class="about-card glass-card reveal">
             <div>
               <p>
                 I am Saksham Baranwal, a Second-year B.Tech Computer Science Engineering student
-                with a strong interest in software development, web technologies, 
-                and artificial intelligence. I enjoy transforming ideas into practical digital 
+                with a strong interest in software development, web technologies,
+                and artificial intelligence. I enjoy transforming ideas into practical digital
                 solutions through clean, efficient, and user-focused design. With a continuous
                 learning mindset, I am dedicated to strengthening my technical skills while staying
                 up to date with modern tools and technologies.
               </p>
               <p>
-                I believe that consistency, curiosity, and problem-solving are the foundations of 
-                growth in technology. Through academic projects, personal learning, and hands-on 
-                experience, I strive to build applications that create real value. My goal is to 
-                develop into a skilled software engineer who contributes to innovative and impactful 
+                I believe that consistency, curiosity, and problem-solving are the foundations of
+                growth in technology. Through academic projects, personal learning, and hands-on
+                experience, I strive to build applications that create real value. My goal is to
+                develop into a skilled software engineer who contributes to innovative and impactful
                 solutions while continuously learning and improving throughout my career.
               </p>
             </div>
@@ -113,42 +200,54 @@
               <span class="card-icon">01</span>
               <h3>Programming</h3>
               <div class="chip-row">
-                <span>C++</span>
-                <span>Python</span>
-                <span>Java</span>
-                <span>JavaScript</span>
+                <span style="--dot: #4da3ff">C++</span>
+                <span style="--dot: #ffd43b">Python</span>
+                <span style="--dot: #ff7a59">Java</span>
+                <span style="--dot: #ffe14d">JavaScript</span>
               </div>
             </article>
             <article class="skill-card glass-card reveal">
               <span class="card-icon">02</span>
               <h3>Frontend</h3>
               <div class="chip-row">
-                <span>HTML</span>
-                <span>CSS</span>
+                <span style="--dot: #ff7a3d">HTML</span>
+                <span style="--dot: #3fa0ff">CSS</span>
+                <span style="--dot: #4dd6ff">React</span>
                 <span>Responsive Design</span>
               </div>
             </article>
             <article class="skill-card glass-card reveal">
               <span class="card-icon">03</span>
-              <h3>Tools</h3>
+              <h3>Backend &amp; Data</h3>
               <div class="chip-row">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>VS Code</span>
-                <span>AI Tools</span>
-                <span>Wix AI</span>
+                <span style="--dot: #5fd068">Node.js</span>
+                <span style="--dot: #7bd35a">Spring Boot</span>
+                <span style="--dot: #6aa6ff">PostgreSQL</span>
+                <span style="--dot: #38a8ff">SQL</span>
               </div>
             </article>
             <article class="skill-card glass-card reveal">
               <span class="card-icon">04</span>
-              <h3>Soft Skills</h3>
+              <h3>Tools &amp; Cloud</h3>
               <div class="chip-row">
-                <span>Teamwork</span>
-                <span>Communication</span>
-                <span>Problem Solving</span>
-                <span>Leadership</span>
+                <span style="--dot: #ff6a4a">Git</span>
+                <span style="--dot: #e8eefc">GitHub</span>
+                <span style="--dot: #2f9bff">Docker</span>
+                <span style="--dot: #ffa92e">AWS</span>
+                <span style="--dot: #3aa0ff">VS Code</span>
+                <span>AI Tools</span>
+                <span>Wix AI</span>
               </div>
             </article>
+          </div>
+          <div class="soft-skills glass-card reveal">
+            <h3>Soft Skills</h3>
+            <div class="chip-row">
+              <span>Teamwork</span>
+              <span>Communication</span>
+              <span>Problem Solving</span>
+              <span>Leadership</span>
+            </div>
           </div>
         </section>
 
@@ -165,26 +264,43 @@
                 A modern, responsive website concept designed to help an NGO
                 share its mission, programs, and donation pathways clearly.
               </p>
-              <a href="https://codewithsakshamb.github.io/she-can-foundation/" class="project-link" target="_blank">
-              View Project
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+              <a href="https://codewithsakshamb.github.io/she-can-foundation/" class="project-link" target="_blank" rel="noreferrer">
+                View Project
               </a>
             </article>
             <article class="project-card glass-card reveal">
               <span class="project-number">02</span>
               <h3>Personal Portfolio</h3>
               <p>
-                A premium black-and-orange portfolio built to present skills,
+                A premium dark-blue portfolio built to present skills,
                 projects, and career goals with a recruiter-ready experience.
               </p>
+              <div class="tag-row">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
               <button class="project-link" type="button">View Project</button>
             </article>
-            <article class="project-card glass-card reveal">
+            <article class="project-card glass-card is-featured reveal">
+              <span class="featured-flag">Featured</span>
               <span class="project-number">03</span>
-              <h3>AI Assistant</h3>
+              <h3>Nova AI</h3>
               <p>
-                A future-focused assistant concept exploring helpful AI,
-                conversational workflows, and clean interface design.
+                A local AI assistant using Gemma 4 with voice commands, memory
+                and app/website control.
               </p>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>LLM</span>
+                <span>WebSockets</span>
+                <span>AI</span>
+              </div>
               <button class="project-link" type="button">View Project</button>
             </article>
             <article class="project-card glass-card reveal">
@@ -194,6 +310,11 @@
                 A growing collection of experiments in web apps, AI tools, and
                 polished interfaces built while learning by shipping.
               </p>
+              <div class="tag-row">
+                <span>Web</span>
+                <span>Cloud</span>
+                <span>AI</span>
+              </div>
               <button class="project-link" type="button">View Project</button>
             </article>
           </div>
@@ -258,7 +379,7 @@
               </label>
               <button class="btn btn-primary" type="submit">
                 Send Message
-                <span aria-hidden="true">↗</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7" /><path d="M8 7h9v9" /></svg>
               </button>
               <p class="form-status" role="status" aria-live="polite"></p>
             </form>
